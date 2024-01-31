@@ -124,4 +124,49 @@ for i in range(1,11):
     print(add)
 print(add)
 
+#function 
+def add(x,y,z):# 변수설정까지 파이썬 정말로 간편하다...!
+    return x+y+z
 
+result = add(10,30,50)
+print(result)
+
+def subtract(x,y):
+    return x-y
+
+result  = subtract(20,10)
+print(result)
+
+def multifly(w,x,y,z):
+    return w*x*y*z
+
+result = multifly(2,3,4,5)
+print(result)
+print(multifly(10,20,30,40))#이런식으로도 활용 가능하다
+
+
+#함수를 항상 만들필요 없이 파이썬 내장함수 쓰면 ㅈㄴ편하게 할 수 있다
+
+a = "Good Morning, man"
+a.upper()#all 대문자로 바꿔준다
+print(a)#적용되서 저장까지 이어지는것은 아니다
+print(a.upper())
+
+a.lower()
+a.count('m')#m이 몇개나 있는지 세준다
+
+a = "Life is too short"
+print(a)
+a.replace("Life","Your height")
+print(a)
+
+
+
+#왜그런지 모르겠는데 파이썬 내장함수들이 사용이 안된다
+#정확히는 적용이 안된다
+
+#오늘의 결론
+#리스트[],딕셔너리{},for i in range(1,11),for i in ages:
+# 반복문과 함수 뒤에 :를 붙이고 함수는 def, return 으로 값을 돌려받는다
+#DUSI가 안되더라도 분명 파고들 수 있는 공간이 있을것이다 
+#낙심하지말고 전진 ㄱㄱ
