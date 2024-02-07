@@ -1,3 +1,5 @@
+import sys
+
 a = 10
 print(a)
 
@@ -513,9 +515,10 @@ print(" \(__)|")
 
 
 
-n= int(input())
-for i in range(1,10):
-    print(n, '*' , i ,'=', n*i)
+# n= int(input())
+# for i in range(1,10):
+#     print(n, '*' , i ,'=', n*i)
+
 # print("%d * %d = %d",a,i,a*i)
 
 
@@ -525,7 +528,153 @@ for i in range(1,10):
 
 
 
+#백준 10950
+# count = int(input())
+# cnt = 0
+
+# while cnt < count:
+#     cnt = cnt + 1
+#     A,B = input().split()
+#     a = int(A)
+#     b = int(B)
+#     print(a+b)
+
+# X = int(input())
+# N = int(input())
+# cnt =0
+# total = 0
+# while cnt< N :
+#     cnt = cnt+1
+#     A,B = input().split()
+#     a = int(A)
+#     b = int(B)
+#     total += a*b
+
+# if(total ==X):
+#     print("Yes")
+# else:
+#     print("No")
 
 
-# print(a/4)#몫
-# print(a%4)#나머지
+#백준 25314번
+# count = int(input())
+# a = count//4
+
+# for i in range(a):
+#     print("long", end = " ")#이런식으로 end를 추가해 개행을 막아준다
+# print("int")
+
+
+#백준 15552번
+# a = sys.stdin.readline()#문자열 저장의 경우에만 .rstrip()뒤에 붙인다
+# count = int(a)
+# for i in range(count):
+#     # A,B = sys.stdin.readline().rstrip().split()
+#     # a = int(A)
+#     # b = int(B)
+#     a,b = map(int,sys.stdin.readline().split())
+#     print(a+b)
+
+#백준 11021번
+# count = int(input())
+# for i in range(count):
+#     A,B = input().split()
+#     a = int(A)
+#     b = int(B)
+#     print("Case #%s: %s"%(i+1,a+b))
+#     #print('Case #',str(i+1),':',a+b)#정수형은 떨어져서 나오지만
+#     #문자열은 붙어서 나온다
+
+
+# count = int(input())
+# for i in range(count):
+#     A,B = input().split()
+#     a = int(A)
+#     b = int(B)
+#     print("Case #%s: %s + %s = %s"%(i+1,a,b,a+b))
+
+# count = int(input())
+# for i in range(count):
+#     for j in range(i+1):
+#         print("*",end = "")
+#     print()
+
+# count = int(input())#거꾸로 돌려야한다
+# for i in range(1,count+1):
+#     print(" "*(count-i) + "*"*i)
+
+
+# while True:
+#     A,B = input().split()
+#     a = int(A)
+#     b = int(B)
+#     if(a==0) and (b==0):
+#         break
+#     else:
+#         print(a+b)
+
+
+# while True:
+#     try: 
+#         a,b = map(int, input().split())
+#         print(a+b)
+#     except:#try catch문처럼 try except를 사용한다
+#         break
+
+#코딩테스트 준비할 수 있는 시간 많지않다.
+#이시간에 목숨을 걸어야한다
+
+#10807 다시 풀어보기
+# count = int(input())
+# list = list(map(int,input().split()))
+# v = int(input())
+# a = list.count(v)
+# print(a)
+#찾고자 하는 정수를 입력 받아서
+
+#배열에서 몇개 들어있는지 검사해서 출력
+    
+#파이썬에 배열 비스무리한것들은 리스트,튜플,딕셔너리,집합,불 이 있다
+#다섯개를 완벽히 숙지할 필요가 있다 지금당장
+    
+
+# count,x = map(int,input().split())
+# list = list(map(int,input().split()))
+# for i in range(count):
+#     if(list[i]<x):
+#         print(list[i],end =" ")
+
+#백준 10818번
+#min max함수 이용할수 있다면 그게 제일 좋고
+# 이중 for문을 이용해 min max구할수 있을 것이다
+#최대 최소 구할떄 굳이 이중포문 사용하지 않아도 된다는것을 인지
+
+# count = int(input())
+# list = list(map(int,input().split()))
+
+# max = list[0]
+# min = list[0]
+
+# for i in list[1:]: #리스트 사용 방식을 익혀라
+#     if i>max:
+#         max =i
+#     elif i<min:
+#         min = i
+# print(min,max)
+
+
+#백준 2562
+# n_list = []#list 를 사용하기 위해서는 미리 []선언해줘야한다
+# for _ in range(9):
+#     i = int(input())
+#     n_list.append(i)#append 함수 사용 가능
+
+# print(max(n_list))#max함수 사용 가능
+# print(n_list.index(max(numbers))+1)
+
+
+#나는 코딩테스트에 파이썬으로 합격하기로 각오했다
+#할수있다 하면된다
+
+N,M = map(int,input().split())
+# for i in range(M):
